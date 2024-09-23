@@ -21,7 +21,7 @@ body {
     font-weight: 800;
     float: left;
     font-family: courier;
-    color: #227B94;
+    color: hsl(193, 81%, 13%);
 }
 
 .menu {
@@ -36,9 +36,9 @@ nav {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background: #ffffff;
+    background: hwb(249 46% 5%);
     z-index: 1;
-    border-bottom: 1px solid #227B94;
+    border-bottom: 1px solid #151d1f;
 }
 
 nav ul {
@@ -180,6 +180,25 @@ p {
     border-radius: 50%;
 }
 
+.portofolio-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-portofolio {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-portofolio img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+
 #contact {
     background: #dedede;
     padding: 50px 0px 50px 0px;
@@ -213,4 +232,43 @@ h3 {
     width: 100%;
     padding: 50px 0px 50px 0px;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+
+    
+    .kartu-tutor {
+        width: 50%;
+    }
+
+    .kartu-partners  {
+        width: 50%;
+    }
 }
